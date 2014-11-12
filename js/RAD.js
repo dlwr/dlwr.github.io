@@ -9,6 +9,7 @@
   };
   var depthSelectBox = document.createElement('form');
   depthSelectBox.innerHTML = '<select name="radDepth" onchange="changeRadDepth()"><option value="today">今日</option><option value="since_blog">2011年11月7日から今日まで</option><option value="since_diary">2003年1月16日から今日まで</option></select>';
+  document.write('<div id="RAD"></div>');
   var rad = document.querySelector('#RAD').parentNode.parentNode.parentNode;
   rad.querySelector('.entry-header').insertBefore(depthSelectBox, rad.querySelector('.entry-header .date'));
   window.goRad = function() {
