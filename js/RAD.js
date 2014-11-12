@@ -7,6 +7,7 @@
     }
     loading = true;
     var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'http://219.94.245.80:3000/today?pretend=true', true);
     xhr.responseType = 'document';
     xhr.onload = function (e) {
       loading = false;
@@ -47,7 +48,6 @@
         return;
       }
     };
-    xhr.open('GET', 'http://219.94.245.80:3000/today?pretend=true', true);
     xhr.send(null);
   };
   goRad();
