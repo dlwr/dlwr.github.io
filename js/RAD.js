@@ -1,6 +1,7 @@
 (function(){
   var loading = false;
   var first = true;
+  document.write('<div id="RAD"></div>');
   window.goRad = function() {
     if (loading) {
       return;
@@ -14,7 +15,6 @@
       if (xhr.status <= 200 && xhr.status < 300) {
         var doc = e.target.response;
         var god = doc.querySelector('#main-inner .entry-inner');
-        document.write('<div id="RAD"></div>');
         var rad = document.querySelector('#RAD').parentNode.parentNode.parentNode;
         if (!god || god.parentNode.className.match('no-entry')) {
           goRad();
