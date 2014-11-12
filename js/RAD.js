@@ -22,14 +22,6 @@
         }
         rad.querySelector('.entry-header .date').innerHTML = god.querySelector('.entry-header .date').innerHTML;
         rad.querySelector('.entry-header .entry-title').innerHTML = god.querySelector('.entry-header .entry-title').innerHTML;
-        var card = document.createElement('iframe');
-        card.setAttribute('style', 'width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;');
-        card.setAttribute('title', doc.title);
-        card.setAttribute('src', rad.querySelector('.entry-header .entry-title a').href.replace('entry', 'embed'));
-        card.setAttribute('frameborder', '0');
-        card.setAttribute('scrolling', 'no');
-        // rad.querySelector('.entry-header').insertBefore(card);
-        rad.parentNode.insertBefore(card, rad.nextSibling);
         rad.querySelector('.entry-content').innerHTML = god.querySelector('.entry-content').innerHTML;
         rad.querySelector('.entry-footer').innerHTML = god.querySelector('.entry-footer').innerHTML;
         var commentBox = rad.querySelector('.comment-box');
