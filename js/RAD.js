@@ -21,7 +21,6 @@
         }
         rad.querySelector('.entry-header .date').innerHTML = god.querySelector('.entry-header .date').innerHTML;
         rad.querySelector('.entry-header .entry-title').innerHTML = god.querySelector('.entry-header .entry-title').innerHTML;
-        rad.querySelector('.entry-header .entry-title').innerHTML += '<a href="/entry/RAD">  (★RAD★)</a>';
         var card = document.createElement('iframe');
         card.setAttribute('style', 'width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;');
         card.setAttribute('title', doc.title);
